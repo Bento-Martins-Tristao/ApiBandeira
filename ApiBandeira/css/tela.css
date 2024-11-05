@@ -1,0 +1,53 @@
+/* Resetando margens e preenchimentos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* Permite uma disposição vertical */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    font-family: 'Arial', sans-serif; /* Fonte padrão */
+    background-color: #f0f8ff; /* Fundo claro */
+    color: #333; /* Cor padrão do texto */
+}
+h1 {
+    color: #0000ff; /* Cor do texto azul */
+    margin-bottom: 20px; /* Espaço entre o título e o botão */
+    text-align: center; /* Centraliza o texto */
+    font-size: 36px; /* Tamanho da fonte */
+}
+button {
+    background-color: #0000ff; /* Cor do botão azul */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove a borda padrão */
+    padding: 12px 24px; /* Preenchimento interno do botão */
+    font-size: 18px; /* Tamanho da fonte do botão */
+    cursor: pointer; /* Cursor de mão ao passar sobre o botão */
+    border-radius: 8px; /* Bordas arredondadas */
+    transition: background-color 0.3s, transform 0.3s; /* Transições suaves */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
+}
+button:hover {
+    background-color: #0056b3; /* Cor ao passar o mouse */
+    transform: translateY(-2px); /* Efeito de elevação ao passar o mouse */
+}
+button a {
+    color: white; /* Cor do texto do link no botão */
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+button:focus {
+    outline: none; /* Remove contorno ao focar */
+}
+@media (max-width: 650px) {
+    h1 {
+        font-size: 28px; /* Ajusta o tamanho da fonte em telas pequenas */
+    }
+    button {
+        font-size: 16px; /* Ajusta o tamanho do botão em telas pequenas */
+        padding: 10px 20px; /* Ajusta o preenchimento */
+    }
+}
